@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Places in Melbourne</title>
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Righteous', Garamond, Georgia, sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: white;
+            margin: 0;
+            font-family: Arial, sans-serif, Trebuchet MS, verdana;
+            font-size: 16px;
+            min-height: 400px;
+            margin-bottom: 100px;
+            clear: both;
+
+        }
+
+        .navigation {
+            display: flex;
+            background-color: #343a40;
+
+            color: #ffffff;
+
+            padding: 15px;
+            font-weight: bold;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+
+        }
+
+        .navigation a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: #ffffff;
+
+
+        }
+
+
+
+
+        .container-title {
+            background-color: #4284c6;
+            color: white;
+            padding-top: 50px;
+            padding-bottom: 15px;
+            text-align: center;
+
+        }
+
+        .Welcome {
+            background-color: lightskyblue;
+            color: white;
+            padding: 1.1rem;
+            text-align: justify;
+            letter-spacing: 0.1em;
+        }
+
+        .Welcome-title {
+            text-align: center;
+        }
+
+        .table01 {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+
+
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        th,
+        td:nth-child(odd) {
+            background-color: rgb(195, 196, 175);
+        }
+
+        th {
+            background-color: rgb(124, 167, 167);
+        }
+
+
+
+        table td:hover {
+            background-color: #b2b08a;
+
+            cursor: pointer;
+
+        }
+
+
+
+        .welcome-body {
+            text-align: center;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: -10px;
+
+        }
+
+        .image-container img {
+            width: calc(50% - 20px);
+            margin: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .bodycontainer {
+            display: flex;
+
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        .bodyimage-container {
+            flex: 1;
+
+            padding-left: 50px;
+        }
+
+        .bodyheader {
+            flex: 2;
+            padding: 30px;
+
+            padding-left: 100px;
+
+        }
+
+        .container {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+
+
+
+
+
+        @media (max-width: 992px) {
+
+            .container {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .image-container,
+            .bodycontainer {
+                flex-direction: column;
+
+                align-items: center;
+
+            }
+
+            .image-container img {
+                max-width: 90%;
+
+            }
+
+            .bodycontainer {
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            .bodyimage-container,
+            .bodyheader {
+                padding: 0 15px;
+
+            }
+
+
+            .navigation {
+                display: flex;
+                background-color: #343a40;
+
+                color: #ffffff;
+                font: auto;
+
+                font-weight: bold;
+                justify-content: left;
+                position: fixed;
+                width: 100%;
+                
+
+            }
+
+            body {
+                background-color: white;
+                margin: 0;
+                font-family: Arial, sans-serif, Trebuchet MS, verdana;
+                font-size: auto;
+                min-height: 400px;
+                margin-bottom: 50px;
+                clear: both;
+            }
+
+
+            .welcome-body01 {
+                text-align: left;
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        footer {
+            background-color: #343a40;
+            position: fixed;
+            color: #ffffff;
+
+            font-size: 0.8rem;
+            font-style: italic;
+            text-align: center;
+            padding: 1px 0;
+
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class='navigation'>
+        <div>
+            <a href="#Welcome">Home</a>
+            <a href="#flinders">Flinders St. Station</a>
+            <a href="#fedsquare">Federation Square</a>
+            <a href="#museum">Melbourne Museum</a>
+            <a href="#botanic">Royal Botanic Gardens</a>
+            <a href="membershipform.html">Membership programs</a>
+        </div>
+    </nav>
+
+    <div id="Welcome" class="container-title">
+        <div class="container">
+            <h1>Beautiful Places In Melbourne</h1>
+            <p>Welcome to Melbourne, the vibrant heart of Victoria and Australia's cultural capital! Nestled on the
+                banks
+                of
+                the Yarra River, Melbourne beckons with its dynamic energy, rich history, and diverse attractions. From
+                its
+                iconic landmarks to its bustling laneways, there's something to captivate every traveler's imagination.
+                Immerse yourself in Melbourne's thriving arts scene, where creativity knows no bounds. Lose yourself in
+                the
+                vast
+                collections of the National Gallery of Victoria, home to masterpieces from around the globe. Catch a
+                show at
+                one
+                of Melbourne's renowned theaters, where world-class performances unfold beneath glittering chandeliers
+                and
+                velvet curtains.</p>
+        </div>
+    </div>
+
+    <div class="table01">
+        <table border="2" class="striped-columns">
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>New Zealand</th>
+                    <th>United States of America</th>
+                    <th>United Kingdom</th>
+                    <th>India</th>
+                    <th>China</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Visitors</td>
+                    <td>291030</td>
+                    <td>170150</td>
+                    <td>169760</td>
+                    <td>158490</td>
+                    <td>148960</td>
+                </tr>
+            </tbody>
+            <caption><i>Top 5 International Visitors to Victoria in 2022/23</i></caption>
+        </table>
+    </div>
+
+    <div class="welcome-body">
+        <h2>Best places to visit</h2>
+        <p class="welcome-body01">
+            Victoria's seaside capital, Melbourne, is a lively city that astonishes visitors with its diverse range of
+            cultural events, breathtaking scenery, and exciting food scene. Start your adventure at the Royal Botanic
+            Gardens, a calm haven in the middle of the city where you may meander through thousands of varieties of
+            plants in exquisitely designed environments. The National Gallery of Victoria, Australia's oldest and most
+            popular gallery, is a refuge for art lovers, offering a stunning collection of Australian and Indigenous art
+            in addition to works of international art.
+        </p>
+        <p><a href="#Welcome" style="text-align: right;">Back to Top</a></p>
+    </div>
+
+    <div class="image-container">
+        <img src="flindersstreet.jpeg" alt="Flinders Street">
+        <img src="FederationSquare.jpeg" alt="Federation Square">
+        <img src="MelbourneMuseum.jpeg" alt="Melbourne Museum">
+        <img src="RoyalBotanicGardens.jpeg" alt="Royal Botanic Gardens">
+        <p><a href="#Welcome" style="text-align: right;">Back to Top</a></p>
+    </div>
+
+
+
+
+    <div id="flinders" class="bodycontainer">
+        <div class="bodyimage-container">
+            <img src="flindersstreet.jpeg" alt="Flinders Street Station">
+        </div>
+        <p id="bodyheader">
+            <b>Flinders Street Station</b><br>
+            Flinders Street Station is an iconic landmark in Melbourne, known for its distinctive
+            yellow facade. It is the busiest railway station in Australia and serves as a major transportation hub in
+            the city.
+        </p>
+        <p><a href="#Welcome" style="text-align: right;">Back to Top</a></p>
+    </div>
+
+    <div id="fedsquare" class="bodycontainer">
+        <div class="bodyimage-container">
+            <img src="FederationSquare.jpeg" alt="Federation Square">
+        </div>
+        <p id="bodyheader">
+            <b>Federation Square</b><br>
+            Federation Square is a cultural precinct in the heart of Melbourne, featuring striking
+            architectural
+            design and hosting various events, exhibitions, and cultural activities throughout the year.
+        </p>
+        <p><a href="#Welcome" style="text-align: right;">Back to Top</a></p>
+    </div>
+
+    <div id="museum" class="bodycontainer">
+        <div class="bodyimage-container">
+            <img src="MelbourneMuseum.jpeg" alt="Melbourne Museum">
+        </div>
+        <p id="bodyheader">
+            <b>Melbourne Museum</b><br>
+            Melbourne Museum is the largest museum in the Southern Hemisphere, showcasing a diverse
+            collection of
+            art, natural history, and cultural artifacts. It offers engaging exhibitions and educational programs
+            for visitors of all ages.
+        </p>
+        <p><a href="#Welcome" style="text-align: right;">Back to Top</a></p>
+    </div>
+
+    <div id="botanic" class="bodycontainer">
+        <div class="bodyimage-container">
+            <img src="RoyalBotanicGardens.jpeg" alt="Royal Botanic Gardens">
+        </div>
+        <p id="bodyheader">
+            <b>Royal Botanic Gardens</b><br>
+            The Royal Botanic Gardens is a serene oasis in the heart of Melbourne, featuring lush greenery, tranquil
+            lakes, and a wide variety of plant species from around the world. It is a popular destination for leisurely
+            walks and picnics.
+        </p>
+        <p><a href="#Welcome" style="text-align: right;">Back to Top</a></p>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2024 SIT774 - WEB TECHNOLOGIES AND DEVELOPMENT DEAKIN UNIVERSITY.</p>
+    </footer>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
